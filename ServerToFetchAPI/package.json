@@ -3,13 +3,13 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "node-fetch": "^3.3.2",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "puppeteer": "^24.37.5"
   },
   "name": "servertofetchapi",
   "version": "1.0.0",
   "description": "",
   "main": "Server.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
