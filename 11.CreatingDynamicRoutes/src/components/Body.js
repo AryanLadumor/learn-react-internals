@@ -82,7 +82,7 @@ const Body = () => {
             <div>No Such Restaurent Found</div>
           ) : (
             filterredRestaurent.map((obj) => (
-              <Link  key={obj.info.id} to={"/restaurents/" + obj.info.number}>
+              <Link className="res-card-link" key={obj.info.id} to={"/restaurents/" + obj.info.number}>
               <RestaurentCard  resData={obj} />
               </Link>
 
