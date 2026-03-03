@@ -24,16 +24,23 @@ class UserClass extends React.Component {//extending this will make it class bas
         count2 : 1 // defining 2nd statevariable
     }
 
-
+    //! part-4.1 life cyccle 
+    console.log(this.props.name,"Child  Constructor Called ")
   }
 
+  //! Part-4.2 this is used to make api calls 
+  componentDidMount(){
+    console.log(this.props.name , "child didMount called")
+  }
+  
   
   
   
   render() {
     //in class based we have render method which return a piece fof jsx
     
-
+    //! part-4.1 life cyccle 
+    console.log(this.props.name,"Child rendered Called ")
 
 
     //! part -1.3
