@@ -21,12 +21,19 @@ class AboutUs extends Component{
             <h2> this is about Page</h2>
             {/* Pasing Props */}
             {/* <User  name = "Aryan (function)"  location="Bharuch"  /> */}
-            <UserClass name = "First " location="Bharuch"  />
-            <UserClass name = "Second " location="Bharuch"  />
+            <UserClass name = "1st " location="Bharuch"  />
+
+            {/* //! Part 5 hainv multiple  child and life cycle of component 1:30 */}
+            <UserClass name = "2nd " location="Bharuch"  />
+            <UserClass name = "3rd " location="Bharuch"  />
+            <UserClass name = "4th  " location="Bharuch"  />
         </div>
     );
     }
 }
+
+//You can check the output of this in console the render phase and the commit phase
+
 
 
 
