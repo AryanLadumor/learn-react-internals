@@ -1,0 +1,69 @@
+//! part-1 by this hook(useContext) we can acess that useradata
+import { useState, useContext } from "react";
+import { LOGO_URL } from "../utils/constants";
+import { Link } from "react-router";
+import logo from "../images/Logo.jpeg";
+//! his we have to pass in hook to get the data
+import UserContext from "../utils/UserContext";
+
+
+import useOnlineStatus from "../utils/useOnlineStatus";
+
+const Header = () => {
+  const [btnName, setBtnName] = useState("Login");
+
+  const data = useContext(UserContext)
+  console.log(data.loggedInUser)
+  const onlineStatus = useOnlineStatus();
+
+  return (
+    <div className="flex justify-between items-center bg-pink-100 shadow-lg mb-2">
+      <div className="logo-container">
+        <img className="w-56" src={logo.default} alt="image" />
+      </div>
+
+      <div className="flex items-center ">
+        <ul className="flex  e p-4 m-4 ">
+          <li className="px-4 mx-4 text-2xl ">
+            Online Status{onlineStatus ? "✅" : "🔴"}
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            <Link to="/grocery">Grocery</Link>
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            cart
+          </li>
+          <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50 rounded-full hover:bg-pink-400 hover:scale-105  transition duration-100">
+            <button
+              className="auth-button"
+              onClick={() => {
+                if (btnName === "Login") {
+                  setBtnName("Logout");
+                } else {
+                  setBtnName("Login");
+                }
+              }}
+            >
+              {btnName}
+            </button>
+          </li>
+           <li className="px-4 mx-4 text-2xl  bg-pink-300 border-4  border-pink-500/50  hover:bg-pink-400 hover:scale-105  transition duration-100">
+            {data.loggedInUser} 
+            {/* //!  displaying context data */}
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
