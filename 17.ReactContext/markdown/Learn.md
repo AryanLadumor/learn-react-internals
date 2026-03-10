@@ -63,3 +63,5 @@ so we can also pass setUsername funtionn and use it every where like we did it i
 nextChapter --< redux>
 for mid size app context is great also in large app but redux is become a commo pattern 
 and redux is scalable 
+
+1 : 11 : 40-45
