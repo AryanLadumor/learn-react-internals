@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"
 import cartReducer from "./cartSlice"
-import todoSlice from "./todoSlice"
 //! part-4 creating/cofiguration of our store
 const appStore = configureStore({
     //this is big whole reducer is responsible to modified the appstore 
@@ -9,7 +8,6 @@ const appStore = configureStore({
         cart : cartReducer,
         //here we will put all other reducer for different slices eg
         //user : userReducer,
-        todo : todoSlice
     }
 });
 
