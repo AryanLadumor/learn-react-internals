@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 
 //creating react Element from core which is not developer friendly ,it reduce redabily
 const heading = React.createElement("h1", { id: "heading" }, "Hello World ");
-console.log(heading);
+console.log("heading" ,heading);
 
 // JSX => HTML-like or XML-like
 //creating react element by jsx
 const jsxheading = <h1 id="heading">Hello World By JSX</h1>; //this piece of code written is JSX
 //here attributes are passed in camel case eg clasName , tabIndex which prove jsx is not html
+console.log("JSXheading" , jsxheading); //this is same as heading JS object
 
-console.log(jsxheading); //this is same as heading JS object
 
 //For Multiple Line of jsx we should wrap all things in simple brakets
 const multilineJSX = (
