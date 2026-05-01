@@ -1,0 +1,21 @@
+{
+  "name": "3.ignitingourapp",
+  "version": "1.0.0",
+  "description": "here we gonna see how react is built",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browserslist" : [
+    "last 2 versions" 
+  ]
+}
