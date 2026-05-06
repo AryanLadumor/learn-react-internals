@@ -19,6 +19,9 @@ In a real project, we never keep everything in `app.js`. We use a structured app
 
 ---
 
+## what are hooks
+
+
 ## 🤯 2. The Big Question: Normal Variable vs. State Variable
 
 You might have tried to filter a list using a regular `let` variable and noticed that the UI didn't change, even though the data did. Let's explore why.

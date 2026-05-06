@@ -16,7 +16,7 @@ class UserClass extends React.Component {//extending this will make it class bas
     // console.log(props)
     
     //! part 2.1 creatin hoks
-    //when we say rendeing a funtion commp if we call it it load on web page we are mounting that functin call,invoking that funtional compom  so invokinkng --> loading or m,outing on web page 
+    //when we say rendeing a funtion commp if we call it it load on web page we are mounting that functin call,invoking that funtional compom  so invokinkng --> loading or mouting on web page 
     //when we say loading class based we are creating instance  , so when we creating instane this constructir id called so this is the best place to recive props and best place to create state variable 
     //this.state is a big whole obj wghich contain All state variable this is how we defind sta var in CBC
     this.state = {
@@ -73,4 +73,4 @@ class UserClass extends React.Component {//extending this will make it class bas
 }
 
 
-export default UserClass; 
+export default UserClass;
