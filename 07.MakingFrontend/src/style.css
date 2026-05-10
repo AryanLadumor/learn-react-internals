@@ -1,0 +1,57 @@
+/*  Header */
+
+.header{
+    display:flex;
+    justify-content:  space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav-items>ul{
+    font-size: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items>ul>li{
+    padding-right : 60px;
+    margin : 10px;
+}
+
+
+/* res-card */
+
+.res-Card-img{
+    width: 100%;
+    height: 150px;
+}
+
+.res-card{
+    width: 180px;
+    height: 380px;
+    padding : 20px;
+    margin : 10px;
+    transition: 200ms;
+}
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    transform: scale(1.03);
+}
+
+/* Body */
+.body{
+    border: 1px solid black;
+    height: 180vh;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
