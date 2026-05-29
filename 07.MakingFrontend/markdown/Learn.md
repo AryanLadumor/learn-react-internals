@@ -188,6 +188,14 @@ const cardStyle = {
 
 ---
 
+## 7. A good thing About Prop
+
+- You can remind your readers about the V8-to-Blink Bridge from Chapter 2.
+  
+  - **The expensive way (Manual JS)**: If you manually changed a C++ object’s text in the DOM, you would have to cross the bridge for every single update.
+
+  - **The React way (Props)**: Props allow React to handle all the data changes inside the fast JavaScript environment first. React collects all the different props, calculates the final UI, and then makes a single, efficient trip across the bridge to update the underlying C++ blink::Element.
+
 ## ✅ Summary
 
 | Concept                 | Description                                       |
@@ -200,4 +208,4 @@ const cardStyle = {
 
 ---
 
-> 💡 **Up next:** We will set up the same folder structure as a real React app and explore **Hooks**!
+> 💡 **Up next:** We will set up the same folder structure as a real React app and explore **Hooks**.

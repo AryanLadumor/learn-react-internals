@@ -6,7 +6,7 @@ const User = ({name,location}) =>{
         const [count1 , setCount1] = useState(0)
         const [count2 , setCount2] = useState(1)
 
-        //! part4 we make use effect to make api call
+        //! part-4 we make use effect to make api call
         useEffect(()=>{
             //* because we 1st Load --> Render --> Api Call --> Render
         }  , [])//so samt thing we do in Component did mount 

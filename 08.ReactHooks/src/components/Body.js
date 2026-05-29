@@ -9,7 +9,7 @@ const Body = () => {
   //Now By using State variable with same 23 restaurent object
   let [restaurantsList, setRestaurantsList] = useState(realTimeRestarantData);
 
-  // * Local State Variable - This is how we make our app interactive.
+  // *  State Variable - This is how we make our app interactive.
   // ? Why use State instead of a normal 'let' variable?
   // ? Because calling 'setRestarantsList' tells React to trigger its "Diff Algorithm" which  will
   // ? update the UI. A normal variable would update in memory but leave the UI unchanged.
